@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#191623">
+<title>Quiz Pokémon 30 anos | Se Liga na Leitura</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background-color:#191623;background-image:radial-gradient(ellipse at 50% 33%,#352435 0,transparent 60%),radial-gradient(#ffffff19 1px,transparent 1px);background-size:auto,20px 20px;color:#f7ead2;font-family:"IBM Plex Mono",monospace}main{width:min(900px,calc(100% - 32px));margin:auto;padding:37px 0 30px}.mast{text-align:center;margin-bottom:29px}.brand{display:inline-flex;align-items:center;gap:9px;color:#ffc77e;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}.ball{width:20px;height:20px;border:2px solid currentColor;border-radius:100%;display:inline-grid;place-items:center;background:linear-gradient(transparent 43%,currentColor 43% 57%,transparent 57%)}.ball:after{content:"";width:6px;height:6px;border:2px solid currentColor;border-radius:100%;background:#241b2a}h1{font:clamp(32px,7vw,68px)/1 "Archivo Black",sans-serif;letter-spacing:-.065em;text-transform:uppercase;margin:13px 0 0;text-shadow:0 5px #6b374e}.device{position:relative;border:3px solid #461521;border-radius:31px 31px 65px 31px;background:linear-gradient(135deg,#f54558,#d72545 68%,#bd1734);padding:16px 24px 24px;box-shadow:inset 0 3px #ff8791,inset 0 -9px #a51430,0 8px 0 #530f25,0 20px 42px #0a0711aa}.top{height:65px;display:flex;align-items:center;gap:11px;border-bottom:2px solid #8d1c35;margin-bottom:16px;padding:0 5px 12px}.lens{width:52px;height:52px;border-radius:50%;border:5px solid #f6e8ce;background:radial-gradient(circle at 29% 27%,#dbfaff 0 11%,transparent 13%),linear-gradient(135deg,#70e6ff,#2585c3 45%,#15456e 77%);box-shadow:0 0 0 2px #642238,inset 0 0 0 2px #153e69,0 4px #8e1733}.led{width:11px;height:11px;border-radius:50%;background:#ff8478;border:2px solid #86273c;box-shadow:inset 1px 1px #fff8}.led.yellow{background:#ffd260}.led.green{background:#a4d985}.model{margin-left:auto;color:#fff0db;font-size:11px;font-weight:700;letter-spacing:.14em}.deck{display:grid;grid-template-columns:minmax(0,1fr) 244px;gap:22px}.bezel{border:3px solid #512a34;border-radius:17px 17px 35px 17px;background:#e9d9c3;box-shadow:0 5px #a51b37,inset 0 2px #fff7e8;padding:13px 15px 12px;color:#513845}.bezel-top,.bezel-bottom{display:flex;align-items:center;justify-content:space-between;font-size:10px;font-weight:700;letter-spacing:.13em}.bezel-top{margin-bottom:9px}.bezel-top span:last-child{height:6px;width:57px;border-block:1px solid #9a6e7d}.bezel-bottom{margin-top:10px}.power{display:inline-flex;align-items:center;gap:6px}.power:before{content:"";width:7px;height:7px;border-radius:50%;background:#b52a49}.screen{border:5px solid #363539;border-radius:7px;background:repeating-linear-gradient(0deg,#304b1010 0 1px,transparent 1px 4px),#becb7c;color:#263618;padding:16px 17px;min-height:300px;box-shadow:inset 0 3px 9px #35431088}.screen-head{display:flex;justify-content:space-between;gap:8px;border-bottom:1px dashed #42582c;padding-bottom:9px;font-size:11px;letter-spacing:.09em;font-weight:700}.bars{display:flex;gap:4px;align-items:center}.bars i{width:12px;height:5px;border:1px solid #455b28}.bars .on{background:#354a22}.question{font-size:clamp(16px,2.55vw,22px);line-height:1.24;margin:14px 0}.choices{list-style:none;padding:0;margin:0;display:grid;gap:4px}.choices li{display:grid;grid-template-columns:15px 24px 1fr;align-items:center;min-height:32px;padding:4px 6px;font-weight:600;font-size:14px;border:1px solid transparent}.choices .selected{background:#344820;color:#eff7c4;border-color:#344820}.screen-foot{margin:12px 0 0;font-size:11px;font-weight:700}.controls{border:2px solid #a71f39;border-radius:17px 17px 42px 17px;padding:16px 12px;box-shadow:inset 0 2px #ff6572;background:#a318331c;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}.pad{display:grid;grid-template:repeat(3,34px)/repeat(3,36px);filter:drop-shadow(0 4px 0 #641c30);touch-action:manipulation}.pad button,.core{background:#26232e;color:#eee2d0;border:0;font:700 17px monospace}.up{grid-area:1/2;border-radius:8px 8px 0 0}.left{grid-area:2/1;border-radius:8px 0 0 8px}.right{grid-area:2/3;border-radius:0 8px 8px 0}.down{grid-area:3/2;border-radius:0 0 8px 8px}.core{grid-area:2/2;display:grid;place-items:center}.core:after{content:"";width:16px;height:16px;border:2px solid #16141b;border-radius:50%;background:#322d3a}button{cursor:pointer;touch-action:manipulation}button:focus-visible{outline:3px solid #fff6ce;outline-offset:4px;z-index:1}.pad button:hover,.pad button:active{background:#45404e}.actions{display:flex;gap:19px;align-items:end}.action{text-align:center;color:#fff0dc;font-size:10px;font-weight:700;letter-spacing:.03em}.action button{display:block;border:2px solid #522037;border-radius:50%;width:47px;height:47px;margin:0 auto 8px;color:#fff3de;background:#86265c;box-shadow:inset 0 2px #d35e91,0 4px #652039;font:700 20px "IBM Plex Mono",monospace}.action.primary button{width:55px;height:55px;background:#521e49}.action button:active{transform:translateY(3px);box-shadow:inset 0 2px #d35e91}.speaker{display:flex;gap:5px;transform:skewY(-13deg);align-self:flex-end;margin:6px 8px 0 0}.speaker i{width:4px;height:21px;border-radius:3px;background:#731931;box-shadow:1px 1px #f65a6d}.help{text-align:center;color:#e4c6d4;font-size:12px;margin:24px 0 0;line-height:1.6}kbd{display:inline-block;background:#2b2233;color:#fff0d9;border:1px solid #685168;border-bottom-width:2px;border-radius:4px;padding:0 5px;font:inherit}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-width:680px){main{padding-top:24px}.mast{margin-bottom:21px}.device{padding:12px 13px 20px;border-bottom-right-radius:43px}.deck{grid-template-columns:1fr;gap:12px}.top{height:53px;margin-bottom:11px}.lens{width:42px;height:42px}.bezel{padding:10px}.screen{min-height:270px;padding:12px}.controls{display:grid;grid-template-columns:1fr 1fr;justify-items:center;gap:9px;padding:10px}.speaker{display:none}.help{margin-top:21px}.pad{grid-template:repeat(3,29px)/repeat(3,34px)}}
+@media(max-width:350px){main{width:calc(100% - 18px)}.actions{gap:9px}.model{font-size:9px}}
+.panel{min-height:225px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.panel[hidden]{display:none}.panel h2{font:clamp(22px,4vw,36px)/1.1 "Archivo Black",sans-serif;letter-spacing:-.04em;margin:12px 0}.panel p{font-size:14px;line-height:1.5;margin:0 0 10px}.panel .score{font-size:clamp(38px,7vw,64px);line-height:1;font-weight:700;letter-spacing:-.09em;margin:14px 0 0}.panel .screen-foot{font-size:11px;margin:6px 0 0}.device button:disabled{opacity:.58;cursor:default}.pad button:disabled{background:#26232e}.bars{max-width:45%;overflow:hidden}.bars i{flex:1 1 12px;min-width:2px}
+
+main{width:min(1080px,calc(100% - 32px))}.screen{min-height:420px}.panel{min-height:345px}.question{font-size:1.25rem;line-height:1.4}.choices li{font-size:1rem;line-height:1.4;min-height:44px}.panel p,.feedback p{font-size:1rem;line-height:1.55}.screen-head{font-size:.8125rem;letter-spacing:.02em}.panel .screen-foot,.screen-foot{font-size:.8125rem;line-height:1.5}.feedback{padding-top:16px}.feedback h3{font-size:1.25rem;margin:0 0 12px}.feedback p{margin:0 0 12px}.feedback .answer{font-weight:700}.choices .correct{border:2px solid #344820}.choices .selected.wrong{background:transparent;color:#263618;border:2px dashed #344820}.quiz-hint{font-size:.8125rem;margin:14px 0 0}.result-actions{display:grid;gap:8px;width:100%;margin:16px 0 0}.lcd-button{display:block;width:100%;text-align:left;border:2px solid #344820;padding:10px 12px;background:transparent;color:inherit;font:700 .875rem/1.4 "IBM Plex Mono",monospace;text-decoration:none}.lcd-button.selected{background:#344820;color:#eff7c4}.lcd-button:focus-visible{outline:3px solid #263618;outline-offset:2px}.coupon{border-block:2px dashed #42582c;padding:12px 0;width:100%;margin:8px 0}.coupon strong{font-size:1.5rem;letter-spacing:.07em}.coupon p{margin:0}.help{font-size:.875rem}.action{font-size:.8125rem}.brand{font-size:.875rem}.anniversary{text-align:center;font-size:.875rem;margin:13px 0 0;letter-spacing:.15em;color:#ffc77e}.choices .cursor{font-weight:700}.status{min-height:1.5em;font-size:.8125rem!important;margin:8px 0 0!important}[hidden]{display:none!important}
+@media(max-width:680px){.screen{min-height:370px}.panel{min-height:295px}.question{font-size:1.125rem}.screen-head{font-size:.75rem}.bars{max-width:35%;gap:2px}.controls{position:sticky;bottom:8px;background:#d72545;z-index:2;box-shadow:0 4px #8d1c35}.panel h2{font-size:1.75rem}.panel p{font-size:1rem}.model{font-size:.75rem}}
+</style>
+</head>
+<body>
+<main>
+<header class="mast"><div class="brand"><span class="ball" aria-hidden="true"></span>Se Liga na Leitura</div><h1>Quiz Pokémon</h1><p class="anniversary">30 ANOS DE AVENTURA</p></header>
+<section class="device" aria-label="Console do quiz">
+<div class="top" aria-hidden="true"><div class="lens"></div><span class="led"></span><span class="led yellow"></span><span class="led green"></span><span class="model">POKÉDEX / QUIZ</span></div>
+<div class="deck">
+<div class="bezel">
+<div class="bezel-top" aria-hidden="true"><span>● &nbsp; LCD</span><span></span></div>
+<div class="screen">
+<div class="screen-head"><span id="counter"></span><span class="bars" id="bars" aria-hidden="true"></span></div>
+<div class="panel" id="intro">
+<h2>Pronto para o desafio?</h2>
+<p>Há 30 anos, Pokémon começou uma aventura que atravessou gerações. Você se lembra dos primeiros jogos, das histórias de Kanto e daquela abertura que todo mundo cantava?</p>
+<p>Responda a 15 perguntas, conquiste até 15 pontos e desbloqueie um cupom especial para sua próxima aventura literária!</p>
+<p>Cada resposta certa vale 1 ponto. Preparado para mostrar que conhece esse universo?</p>
+<p class="screen-foot">APERTE A PARA COMEÇAR<br>15 PERGUNTAS · 1 PONTO POR ACERTO</p>
+</div>
+<div id="quiz" hidden>
+<h2 class="question" id="question"></h2>
+<ul class="choices" id="choices"></ul>
+<p class="quiz-hint" id="quiz-hint">Escolha uma opção e aperte A.</p>
+<div class="feedback" id="feedback" hidden>
+<h3 id="feedback-title"></h3>
+<p class="answer" id="correct-answer"></p>
+<p id="explanation"></p>
+</div>
+</div>
+<div class="panel" id="result" hidden>
+<p class="score" id="score"></p>
+<h2 id="result-title"></h2>
+<p id="result-message"></p>
+<div class="coupon"><p id="discount"></p><strong id="coupon"></strong></div>
+<div class="result-actions">
+<button class="lcd-button" id="copy-coupon" data-result="0">COPIAR CUPOM</button>
+<a class="lcd-button" id="books" data-result="1" href="https://leitura.com.br/" target="_blank" rel="noopener noreferrer">VER LIVROS</a>
+<button class="lcd-button" id="replay" data-result="2">JOGAR DE NOVO</button>
+</div>
+<p class="status" id="coupon-status" role="status"></p>
+<p class="screen-foot">Use as setas e A para escolher. B para rever as respostas.</p>
+</div>
+</div>
+<div class="bezel-bottom" aria-hidden="true"><span class="power">POWER</span><span>DOT MATRIX</span></div>
+</div>
+<div class="controls" role="group" aria-label="Controles do quiz">
+<div class="pad"><button class="up" aria-label="Alternativa anterior" data-command="prev">▲</button><button class="left" aria-label="Alternativa anterior" data-command="prev">◀</button><span class="core" aria-hidden="true"></span><button class="right" aria-label="Próxima alternativa" data-command="next">▶</button><button class="down" aria-label="Próxima alternativa" data-command="next">▼</button></div>
+<div class="actions">
+<div class="action"><button id="back" aria-label="B, voltar" data-command="back">B</button>VOLTAR</div>
+<div class="action primary"><button id="confirm" aria-label="A, confirmar" data-command="confirm">A</button><span id="confirm-label">CONFIRMAR</span></div>
+</div>
+<div class="speaker" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+</div>
+</section>
+<p class="help">No teclado, use as <kbd>setas</kbd> para escolher, <kbd>Enter</kbd> para confirmar e <kbd>Esc</kbd> para voltar.</p>
+<p id="announcement" class="sr" role="status"></p>
+</main>
+<script>
+const questions = [
+  {
+    "text": "No anime clássico, qual foi o primeiro Pokémon capturado por Ash?",
+    "options": [
+      "Pikachu",
+      "Pidgeotto",
+      "Caterpie",
+      "Bulbasaur"
+    ],
+    "correct": 2,
+    "explanation": "Pikachu foi recebido do Professor Carvalho, não capturado. Caterpie foi a primeira captura de Ash, no episódio “Ash Captura um Pokémon”."
+  },
+  {
+    "text": "Nos jogos da primeira geração, o que precisava acontecer para Haunter evoluir para Gengar?",
+    "options": [
+      "Usar uma Pedra da Lua",
+      "Ser trocado com outro jogador",
+      "Chegar ao nível 40",
+      "Vencer uma batalha na Torre Pokémon"
+    ],
+    "correct": 1,
+    "explanation": "Haunter evolui para Gengar por troca. Nos jogos originais, isso incentivava os treinadores a conectar seus Game Boys com o cabo Link Cable."
+  },
+  {
+    "text": "No anime clássico, o que Jigglypuff costumava fazer quando sua plateia adormecia durante uma apresentação?",
+    "options": [
+      "Desenhava nos rostos dos espectadores",
+      "Escondia as Poké Bolas de todos",
+      "Começava a cantar ainda mais alto",
+      "Saía em busca de um novo microfone"
+    ],
+    "correct": 0,
+    "explanation": "Frustrado porque seu canto fazia todo mundo dormir, Jigglypuff usava seu marcador, que também servia de microfone, para rabiscar os rostos da plateia."
+  },
+  {
+    "text": "Qual era o nome da organização criminosa que atormentava os treinadores na região de Kanto?",
+    "options": [
+      "Equipe Magma",
+      "Equipe Aqua",
+      "Equipe Plasma",
+      "Equipe Rocket"
+    ],
+    "correct": 3,
+    "explanation": "A Equipe Rocket, comandada por Giovanni, já aparecia nos jogos originais. No anime, Jessie, James e Meowth se tornaram alguns de seus integrantes mais conhecidos."
+  },
+  {
+    "text": "No anime clássico de Kanto, qual Pokémon costuma ajudar a Enfermeira Joy nos Centros Pokémon?",
+    "options": [
+      "Clefairy",
+      "Chansey",
+      "Jigglypuff",
+      "Wigglytuff"
+    ],
+    "correct": 1,
+    "explanation": "Chansey é a companheira clássica da Enfermeira Joy nos Centros Pokémon de Kanto. Outras regiões passaram a apresentar assistentes diferentes."
+  },
+  {
+    "text": "Qual console recebeu os primeiros jogos de Pokémon, lançados no Japão em 1996?",
+    "options": [
+      "Super Nintendo",
+      "Nintendo 64",
+      "Game Boy",
+      "Game Boy Advance"
+    ],
+    "correct": 2,
+    "explanation": "Pokémon Red e Green estrearam no Game Boy japonês em 27 de fevereiro de 1996, dando início à franquia que completa 30 anos em 2026."
+  },
+  {
+    "text": "Os nomes Articuno, Zapdos e Moltres escondem referências a qual idioma?",
+    "options": [
+      "Italiano",
+      "Espanhol",
+      "Latim",
+      "Francês"
+    ],
+    "correct": 1,
+    "explanation": "Os nomes em inglês incorporam uno, dos e tres — os números um, dois e três em espanhol. Uma brincadeira linguística escondida nos três pássaros lendários de Kanto."
+  },
+  {
+    "text": "Qual Pokémon da segunda geração apareceu já no primeiro episódio do anime, em 1997, mais de dois anos antes dos jogos Gold e Silver?",
+    "options": [
+      "Togepi",
+      "Lugia",
+      "Ho-Oh",
+      "Celebi"
+    ],
+    "correct": 2,
+    "explanation": "Ho-Oh cruza o céu no fim da primeira aventura de Ash e Pikachu. Os jogos Gold e Silver só chegaram ao Japão em novembro de 1999."
+  },
+  {
+    "text": "Em Pokémon Red e Blue, qual item é usado para acordar o Snorlax que bloqueia o caminho?",
+    "options": [
+      "Silph Scope",
+      "Poké Flute",
+      "Escape Rope",
+      "Itemfinder"
+    ],
+    "correct": 1,
+    "explanation": "A Poké Flute, recebida após a história do Sr. Fuji em Lavender Town, desperta os Snorlax adormecidos e libera a passagem."
+  },
+  {
+    "text": "Complete o trecho da abertura brasileira clássica de Pokémon: “Com o meu poder, _____ transformar”.",
+    "options": [
+      "O mundo",
+      "O destino",
+      "Tudo",
+      "O futuro"
+    ],
+    "correct": 2,
+    "explanation": "A palavra que completa o trecho é “tudo”. É daquelas frases que muitos fãs cantam de memória — e às vezes descobrem que trocaram uma palavra por anos."
+  },
+  {
+    "text": "Qual destes tipos de Pokémon ainda não existia nos jogos originais de 1996?",
+    "options": [
+      "Fantasma",
+      "Psíquico",
+      "Dragão",
+      "Sombrio"
+    ],
+    "correct": 3,
+    "explanation": "O tipo Sombrio (Dark) surgiu apenas na segunda geração, junto do tipo Aço (Steel), em Pokémon Gold e Silver."
+  },
+  {
+    "text": "Segundo a Pokédex, qual Pokémon tem seu corpo dominado pelo fungo que cresce em suas costas?",
+    "options": [
+      "Parasect",
+      "Venomoth",
+      "Vileplume",
+      "Victreebel"
+    ],
+    "correct": 0,
+    "explanation": "O fungo de Parasect controla o corpo do hospedeiro. É um dos registros mais inquietantes da Pokédex e lembra relações de parasitismo observadas na natureza."
+  },
+  {
+    "text": "Qual foi o primeiro mangá de Pokémon publicado no Brasil?",
+    "options": [
+      "Pokémon Adventures",
+      "Pokémon Black & White",
+      "As Aventuras Elétricas de Pikachu",
+      "Pokémon Pocket Monsters"
+    ],
+    "correct": 2,
+    "explanation": "As Aventuras Elétricas de Pikachu, de Toshihiro Ono, começou a ser publicado no Brasil pela Conrad em 1999. O material saiu em quatro revistas que adaptavam apenas o primeiro volume japonês."
+  },
+  {
+    "text": "Quantas cartas diferentes compunham a primeira expansão principal do Pokémon TCG, lançada no Japão em 1996?",
+    "options": [
+      "60",
+      "102",
+      "151",
+      "120"
+    ],
+    "correct": 1,
+    "explanation": "O Expansion Pack japonês, lançado em 20 de outubro de 1996, tinha 102 cartas, incluindo Pokémon, Treinadores e Energias. O jogo de cartas também completa 30 anos em 2026!"
+  },
+  {
+    "text": "Quais eram os cinco HMs disponíveis em Pokémon Red e Blue?",
+    "options": [
+      "Cut, Fly, Surf, Strength e Flash",
+      "Cut, Fly, Surf, Strength e Waterfall",
+      "Cut, Surf, Flash, Whirlpool e Strength",
+      "Fly, Surf, Flash, Rock Smash e Cut"
+    ],
+    "correct": 0,
+    "explanation": "Os cinco Hidden Machines eram HM01 Cut, HM02 Fly, HM03 Surf, HM04 Strength e HM05 Flash. Atenção: isso não significa que os cinco sejam obrigatórios para terminar o jogo; Flash e Fly, por exemplo, podem ser dispensados."
+  }
+];
+const results = [
+  {
+    "max": 5,
+    "title": "TREINADOR INICIANTE",
+    "discount": "3% DE DESCONTO",
+    "coupon": "POKEMON3",
+    "message": "Toda jornada começa com uma primeira Poké Bola! Você ainda tem muito para descobrir sobre o universo Pokémon, mas já desbloqueou sua recompensa. Use seu cupom de 3% e escolha a próxima aventura nas páginas de um livro."
+  },
+  {
+    "max": 10,
+    "title": "COLECIONADOR DE INSÍGNIAS",
+    "discount": "5% DE DESCONTO",
+    "coupon": "POKEMON5",
+    "message": "Você conhece os caminhos de Kanto, lembra dos clássicos e já tem várias insígnias no currículo! Sua dedicação rendeu um cupom de 5% para continuar a jornada com uma boa leitura."
+  },
+  {
+    "max": 15,
+    "title": "MESTRE POKÉMON",
+    "discount": "10% DE DESCONTO",
+    "coupon": "POKEMON10",
+    "message": "De Pallet à Liga Pokémon: você mostrou que conhece os segredos dessa aventura de 30 anos! Sua recompensa de Mestre Pokémon é um cupom de 10% para encontrar novas histórias e seguir explorando outros universos."
+  }
+];
+const byId = id => document.getElementById(id);
+const answers = [];
+const arrows = document.querySelectorAll('.pad button');
+const resultActions = document.querySelectorAll('[data-result]');
+let page = -1;
+let selection = 0;
+let resultSelection = 0;
+let copying = false;
+
+function getScore() {
+  return questions.filter((question, index) => answers[index] === question.correct).length;
+}
+
+function getResult() {
+  return results.find(result => getScore() <= result.max);
+}
+
+function render() {
+  const question = questions[page];
+  const completed = page === questions.length;
+  const answered = question && answers[page] !== undefined;
+  byId('intro').hidden = page >= 0;
+  byId('quiz').hidden = !question;
+  byId('result').hidden = !completed;
+  byId('back').disabled = page < 0;
+  for (const arrow of arrows) arrow.disabled = page < 0 || Boolean(answered);
+  byId('counter').textContent = completed ? 'RESULTADO' : page < 0 ? 'TELA INICIAL' : 'PERGUNTA ' + String(page + 1).padStart(2, '0') + ' / ' + questions.length;
+  byId('bars').replaceChildren(...questions.map((_, index) => {
+    const bar = document.createElement('i');
+    bar.classList.toggle('on', answers[index] !== undefined);
+    return bar;
+  }));
+  byId('question').textContent = question?.text ?? '';
+  byId('choices').replaceChildren(...(question?.options ?? []).map((option, index) => {
+    const item = document.createElement('li');
+    const cursor = document.createElement('span');
+    cursor.className = 'cursor';
+    cursor.setAttribute('aria-hidden', 'true');
+    cursor.textContent = index === selection ? '▸' : '';
+    const letter = document.createElement('span');
+    letter.textContent = String.fromCharCode(65 + index) + '.';
+    item.classList.toggle('selected', index === selection);
+    item.classList.toggle('correct', Boolean(answered) && index === question.correct);
+    item.classList.toggle('wrong', Boolean(answered) && index === selection && index !== question.correct);
+    if (index === selection) item.setAttribute('aria-current', 'true');
+    item.append(cursor, letter, option);
+    return item;
+  }));
+  byId('feedback').hidden = !answered;
+  byId('quiz-hint').hidden = Boolean(answered);
+  if (answered) {
+    const correct = answers[page] === question.correct;
+    byId('feedback-title').textContent = correct ? 'Você acertou! +1 ponto' : 'Essa não foi a resposta certa.';
+    byId('correct-answer').textContent = 'Resposta certa: ' + String.fromCharCode(65 + question.correct) + ') ' + question.options[question.correct];
+    byId('explanation').textContent = question.explanation;
+  }
+  let label = page < 0 ? 'COMEÇAR' : answered ? 'CONTINUAR' : 'CONFIRMAR';
+  if (answered && page === questions.length - 1) label = 'RESULTADO';
+  if (completed) label = ['COPIAR CUPOM', 'VER LIVROS', 'REJOGAR'][resultSelection];
+  byId('confirm-label').textContent = label;
+  byId('confirm').setAttribute('aria-label', 'A, ' + label.toLowerCase());
+  if (completed) {
+    const result = getResult();
+    const score = getScore();
+    byId('score').textContent = score + ' / ' + questions.length;
+    byId('score').setAttribute('aria-label', score + ' de ' + questions.length + ' pontos');
+    byId('result-title').textContent = result.title;
+    byId('result-message').textContent = result.message;
+    byId('discount').textContent = result.discount;
+    byId('coupon').textContent = result.coupon;
+  }
+  for (const action of resultActions) {
+    action.classList.toggle('selected', Number(action.dataset.result) === resultSelection);
+  }
+  // Keep keyboard focus on an enabled control after confirming an answer.
+  if (document.activeElement?.disabled) byId('confirm').focus({preventScroll:true});
+}
+
+function announce() {
+  const question = questions[page];
+  let text = 'Tela inicial. Pronto para o desafio? Aperte A para começar.';
+  if (page === questions.length) {
+    const result = getResult();
+    text = 'Resultado. ' + getScore() + ' de ' + questions.length + ' pontos. ' + result.title + '. ' + result.discount + '. Cupom ' + result.coupon;
+  } else if (question) {
+    text = 'Pergunta ' + (page + 1) + '. ' + question.text + ' Alternativa ' + String.fromCharCode(65 + selection) + ', ' + question.options[selection];
+    if (answers[page] !== undefined) {
+      text = byId('feedback-title').textContent + ' ' + byId('correct-answer').textContent + '. ' + question.explanation + ' Aperte A para continuar.';
+    }
+  }
+  byId('announcement').textContent = text;
+}
+
+async function copyCoupon() {
+  if (copying) return;
+  copying = true;
+  const coupon = getResult().coupon;
+  try {
+    await navigator.clipboard.writeText(coupon);
+    byId('coupon-status').textContent = 'Cupom copiado!';
+  } catch {
+    byId('coupon-status').textContent = 'Copie o código exibido acima: ' + coupon;
+  } finally {
+    copying = false;
+  }
+}
+
+function activateResult(index) {
+  if (index === 0) {
+    void copyCoupon();
+  } else if (index === 1) {
+    byId('books').click();
+  } else {
+    answers.length = 0;
+    page = -1;
+    selection = resultSelection = 0;
+    byId('coupon-status').textContent = '';
+    render();
+    byId('confirm').focus({preventScroll:true});
+    announce();
+  }
+}
+
+function command(action) {
+  const question = questions[page];
+  if (action === 'prev' || action === 'next') {
+    const delta = action === 'next' ? 1 : -1;
+    if (page === questions.length) {
+      resultSelection = (resultSelection + delta + resultActions.length) % resultActions.length;
+    } else {
+      if (!question || answers[page] !== undefined) return;
+      selection = (selection + delta + question.options.length) % question.options.length;
+    }
+  } else if (action === 'back') {
+    if (page < 0) return;
+    page--;
+    selection = answers[page] ?? 0;
+  } else if (page === questions.length) {
+    activateResult(resultSelection);
+    return;
+  } else if (question && answers[page] === undefined) {
+    answers[page] = selection;
+  } else {
+    page++;
+    selection = answers[page] ?? 0;
+  }
+  render();
+  announce();
+}
+
+for (const button of document.querySelectorAll('[data-command]')) {
+  button.addEventListener('click', () => command(button.dataset.command));
+}
+for (const button of resultActions) {
+  button.addEventListener('focus', () => {
+    resultSelection = Number(button.dataset.result);
+    render();
+  });
+  button.addEventListener('click', () => {
+    resultSelection = Number(button.dataset.result);
+    if (resultSelection !== 1) activateResult(resultSelection);
+  });
+}
+document.addEventListener('keydown', event => {
+  if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+  // Native result links and buttons retain Enter/Space activation.
+  if ((event.key === 'Enter' || event.key === ' ') && event.target.closest('[data-result]')) return;
+  const keyMap = {ArrowUp:'prev',ArrowLeft:'prev',ArrowDown:'next',ArrowRight:'next',Enter:'confirm',Escape:'back'};
+  const action = keyMap[event.key];
+  if (!action) return;
+  event.preventDefault();
+  if (!event.repeat || action === 'prev' || action === 'next') command(action);
+});
+render();
+
+</script>
+</body>
+</html>
