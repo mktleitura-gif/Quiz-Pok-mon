@@ -32,7 +32,7 @@ h1,.panel h2{font-family:"Pixelify Sans",monospace;letter-spacing:0;line-height:
 #replay{border:3px double #344820;text-align:center;padding:14px 12px;margin-top:8px}
 #replay.selected{border-color:#eff7c4;outline:2px solid #344820}
 @media(max-width:680px){
-  .controls{position:static;bottom:auto;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .controls{position:static;bottom:auto;grid-template-columns:102px minmax(0,1fr);gap:8px;padding:12px 8px}
   .deck{grid-template-columns:minmax(0,1fr)}
   .device{padding:12px 10px 20px}
   .bezel{width:100%;padding:10px 8px}
@@ -44,8 +44,8 @@ h1,.panel h2{font-family:"Pixelify Sans",monospace;letter-spacing:0;line-height:
   .model{font-size:.75rem;letter-spacing:.04em}
   .top{gap:8px}
   .lens{flex-shrink:0}
-  .actions{gap:12px}
-  .action{min-width:0;max-width:84px;overflow-wrap:anywhere}
+  .actions{gap:8px}
+  .action{min-width:52px;max-width:84px;overflow-wrap:normal}
   .brand{letter-spacing:.08em}
 }
 @media(max-width:350px){
